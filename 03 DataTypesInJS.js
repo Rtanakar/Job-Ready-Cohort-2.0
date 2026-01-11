@@ -89,6 +89,23 @@
 // Infinity  `Infinity`                 Primitive                           Beyond numeric limit
 
 // *******************************************************************************************************************************************
+// Truthy and Falsy values
+
+// falsy values
+// javascript me aisi saari values jo ki 0, false, ""(blank string), null, undefined, NaN, document.all ye saari values falsy hai
+// console.log(!!0);
+// console.log(!!"");
+// console.log(!!null);
+// console.log(!!undefined);
+// console.log(!!NaN);
+// console.log(!!document.all);
+// console.log(!!false);
+
+// truthy values
+// falsy vlaues ke alawa baki sab truthy values hai
+// all ---> values
+
+// *******************************************************************************************************************************************
 // 🏁 Conclusion
 // Understanding data types is the foundation of JavaScript.
 // They help you decide how data should be stored, used, and
