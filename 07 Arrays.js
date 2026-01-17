@@ -128,7 +128,8 @@
 
 // *******************************************************************************************************************************************
 // filter
-// filter bhi map ki tarah ak naya array deta hai // bas yah wahi value deta hai jo true hai agar value false hai to value nahi dega
+// filter bhi map ki tarah ak naya array deta hai 
+// bas yah wahi value deta hai jo true hai agar value false hai to value nahi dega
 // const arr = [5, 6, 2, 7, 1];
 // const newArr = arr.filter(function (val) {
 //   if (val > 4) return true;
