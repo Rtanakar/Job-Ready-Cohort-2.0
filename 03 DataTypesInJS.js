@@ -13,7 +13,7 @@
 // boolean - ye value ya ans ko sirf true or false me deti hai
 // null - jab apke pas koi value na ho dene ke liye tab ham null ka use karte hai
 
-// array - ak se jyada value ko hold karne ke liye hoti hai // const arr = ["Sita", "Ram", 1, 2, 3, 4, {}, [], true, false, class Home] sabhi ko hold kar sakte hai chahe vo kaise bhi ho
+// array - ak se jyada value ko hold karne ke liye use hoti hai // const arr = ["Sita", "Ram", 1, 2, 3, 4, {}, [], true, false, class Home] sabhi ko hold kar sakte hai chahe vo kaise bhi ho
 
 // object - ak se jyada properties ak person ki hold karne ke liye hoti hai //
 // Symbol - will learn when we will see objects in detail
