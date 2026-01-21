@@ -1,0 +1,51 @@
+# Node.js Streams - Complete Guide
+
+## What are Streams?
+
+Streams let you process data piece by piece (in chunks) instead of loading everything into memory at once. Think of it like drinking water through a straw vs. drinking the whole glass at once.
+
+**Benefits:**
+
+- Memory efficient (handles large files easily)
+- Faster (start processing before all data arrives)
+- Better for large files, videos, logs, etc.
+
+---
+
+## 1. Readable Streams
+
+**Purpose:** Read data from a source (files, HTTP requests, etc.)
+
+### Basic Example:
+
+```javascript
+const fs = require("fs");
+const readStream = fs.createReadStream("./sample.txt", "utf-8");
+
+readStream.on("data", (chunk) => {
+  console.log("Received chunk:", chunk);
+});
+
+readStream.on("end", () => {
+  console.log("Finished reading");
+});
+```
+
+### Creating Custom Readable Stream:
+
+```javascript
+const { Readable } = require("stream");
+
+const readableStream = new Readable({
+  highWaterMark: 2, // Buffer size (how much data to hold)
+  read() {}, // Required method (can be empty)
+});
+
+// Push data into stream
+readableStream.push("Hello");
+readableStream.push("World");
+readableStream.push(null); // Signals end of stream
+
+readableStream.on("data", (chunk) => {
+  console.log(chunk.toString());
+});
